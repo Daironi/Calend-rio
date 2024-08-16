@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <header>
+            <button id="prev-month">&lt;</button>
+            <h1 id="month-year"></h1>
+            <button id="next-month">&gt;</button>
+        </header>
+        <div id="calendar"></div>
+        <div class="event-section">
+            <h2>Adicionar Evento</h2>
+            <form id="event-form">
+                <input type="date" id="event-date" required>
+                <input type="text" id="event-description" placeholder="Descrição do evento" required>
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+        <div class="feedback-section">
+            <h2>Feedback</h2>
+            <form id="feedback-form">
+                <textarea id="feedback" placeholder="Seu feedback..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
